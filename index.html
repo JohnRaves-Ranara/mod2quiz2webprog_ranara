@@ -2,14 +2,29 @@
     <head>
         <link rel="stylesheet" href="index.css">
         <body>
-            <div class = "calculation-screen-background">
-                <p>
-                    HELLO WORLD
-                </p>
+            <div class = "background calculation-screen">
+                <div class = "title-section">
+                    <div class = "calorie-tracker-title">
+                        <p>Calorie Tracker</p>
+                    </div>
+
+                    <div class="details-section">
+                        <div class="age-detail">
+                            <p>What is your age?</p>
+                            <label>-></label>
+                            <input class = "age-txtfield" type="text">
+                        </div><br>
+                        <label for="gender">What is your gender?</label>
+                        <select name="gender_list" id="gender_list">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                   
+                </div>
             </div>
 
-            <div class = "calorie-screen-background">
-            </div>
+            
 
             <script src="index.js"></script>
         </body>
