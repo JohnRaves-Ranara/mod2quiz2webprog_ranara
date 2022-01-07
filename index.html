@@ -1,29 +1,84 @@
 <html>
     <head>
+        <title>Calorie Tracker</title>
         <link rel="stylesheet" href="index.css">
         <body>
             <div class = "background calculation-screen">
-                <div class = "title-section">
+                <div class = "calculation-section">
                     <div class = "calorie-tracker-title">
                         <p>Calorie Tracker</p>
                     </div>
 
                     <div class="details-section">
-                        <div class="age-detail">
-                            <p>What is your age?</p>
+                        <div class="age-details">
+                            <p>Input your age</p>
                             <label>-></label>
-                            <input class = "age-txtfield" type="text">
+                            <input id = "age" class = "age-txtfield" type="text">
                         </div><br>
-                        <label for="gender">What is your gender?</label>
-                        <select name="gender_list" id="gender_list">
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                        </select>
+                        <div class="gender-details">
+                            <p>Input your gender</p>
+                            <label for="gender">-></label>
+                            <select id="gender-list" class="gender-list">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+                        <div class="height-details">
+                            <p>Input your height in cm</p>
+                            <label>-></label>
+                            <input id = "height" class = "height-txtfield" type="text">
+                        </div>
+
+                        <div class="weight-details">
+                            <p>Input your weight in kg</p>
+                            <label>-></label>
+                            <input id = "weight" class = "weight-txtfield" type="text">
+                        </div>
+
+                        <div class="activity-details">
+                            <p>Input your activity</p>
+                            <label for="activity">-></label>
+                            <select id="activity-list" class="activity-list">
+                                <option value="Sedentary">Sedentary: little to no exercise in a day</option>
+                                <option value="Slight">Slight: light exercise 1-3 days/week</option>
+                                <option value="Moderate">Moderate: moderate exercise 3-5 days/week</option>
+                                <option value="Very active">Very active: intense exercises 6-7 days a week</option>
+                                <option value="Extra active">Extra active: very intense exercise daily</option>
+                            </select>
+                        </div>
+
+                        <button onclick = "calculate()" class="calculate-button">Calculate</button>
                     </div>
                    
                 </div>
             </div>
 
+            <div class="background results-screen">
+                <div class= "calorie-intake-result">
+                    <p class = "calorie-intake-label">Maximum calories per-day</p>
+                    <div class="result">
+                        <div class="outer">
+                            <div class="inner">
+                                <div id="result-number-section">
+                                    <p id="result-number"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "calorie-food-section">
+                        <p class = "input-food-label">Input food</p>
+                        <label class="food-arrow">-></label>
+                        <input id="food" class = "food-txtfield" type="text">
+                        <p class = "input-calorie-label">Input calorie amount</p>
+                        <label class = "calorie-arrow">-></label>
+                        <input id = "calorie" class = "calorie-txtfield" type="text"><br>
+                        <button onclick = "deductCalorie()" class="add-food-button">Add food</button>
+                    </div>
+                </div>
+                
+            </div>
+
+            
             
 
             <script src="index.js"></script>

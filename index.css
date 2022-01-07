@@ -1,13 +1,13 @@
+@font-face {
+    font-family: 'latinka-regular';
+    src: url(fonts/Latinka_Regular.ttf);
+}
+
 *{
     padding:0;
     margin: 0;
     box-sizing: border-box;
-}
-
-
-@font-face {
     font-family: 'latinka-regular';
-    src: url(fonts/Latinka_Regular.ttf);
 }
 
 .background{
@@ -25,11 +25,11 @@
 
 }
 
-.title-section{
+
+.calculation-section{
     width: 500px;   
-    height: 600px;
+    height: 550px;
     position: relative;
-    font-family: 'consolas';
     text-align:left;
     background-color: rgba(46,62,93,255);
     border-radius: 5px;
@@ -51,25 +51,171 @@
 }
 
 .age-txtfield{
-     padding: 3px 5px;
-    line-height: 3px; 
+    padding: 3px 5px;
     margin-top: 10px;
     background-color: transparent;
     color: white;
-    font-family: 'consolas';
     width: 100px;    
     border: none;
 }
 
+.gender-details{
+    margin-top: 5px;
+}
+.gender-list{
+    margin-top: 10px;
+    height: 20px;
 
+}
 
-.calorie-screen-background{
-    height: 100vh;
-    background-size: cover;
-    background-color: #FBAB7E;
-    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+.height-details{
+    margin-top: 25px;
 }
 
 
+.height-txtfield{
+    padding: 3px 5px;
+    line-height: 3px; 
+    margin-top: 10px;
+    background-color: transparent;
+    color: white;
+    width: 100px;    
+    border: none;
+}
+
+.weight-details{
+    margin-top: 25px;
+}
+
+.weight-txtfield{
+    padding: 3px 5px;
+    line-height: 3px; 
+    margin-top: 10px;
+    background-color: transparent;
+    color: white;
+    width: 100px;    
+    border: none;
+}
+
+.activity-details{
+    margin-top: 10px;
+}
+.activity-list{
+    margin-top: 10px;
+    height: 20px;
+
+}
+
+.calculate-button{
+    margin: 40px 145px;
+    height: 40px;
+    width: 130px;
+}
+
+.results-screen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7f5a83;
+    background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+}
+
+.calorie-intake-result{
+    height: 300px;
+    width: 800px;
+    margin-bottom: 300px;
+}
+
+.calorie-intake-label{
+    color: white;
+    margin-top: 10px;
+    margin-left: 230px;
+    font-size: 30px;
+}
+
+.result{
+    position: relative;
+    margin-top: 30px ;
+    margin-left: 275px;
+    width: 250px;
+    height: 250px;
+}
 
 
+.outer{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15);
+    padding: 20px;
+}
+
+.inner{
+    height: 210px;
+    width: 210px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(54, 54, 54, 0.7),
+                0.5px 0px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+}
+
+#result-number-section{
+    font-weight: 600px;
+    font-size: 48;
+    color: aqua;
+}
+
+.calorie-food-section{
+    height: 250px;
+    width: 400px;
+    margin-top: 50px;
+    padding-top: 15px;
+    margin-left: 190px;
+    border-radius: 5px;
+    background-color: rgba(46,62,93,255);
+    font-size: 16px;
+    color: aqua;
+}
+
+.input-food-label{
+    margin-left: 20px;
+}
+
+.input-calorie-label{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.food-txtfield{
+    padding: 3px 5px;
+    margin-top: 10px;
+    margin-left: 5px;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+.calorie-txtfield{
+    padding: 3px 5px;
+    margin-top: 10px;
+    margin-left: 5px;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.add-food-button{
+    margin: 40px 140px;
+    height: 40px;
+    width: 130px;
+}
+
+.food-arrow{
+    margin-left: 20px;
+}
+
+.calorie-arrow{
+    margin-left: 20px;
+}
